@@ -1,0 +1,15 @@
+[config]
+# Color scheme type (tonal_spot is the standard Material You vibe)
+scheme_variant = "tonal_spot"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/matugen-colors.conf"
+
+[templates.wofi]
+input_path = "~/.config/matugen/templates/wofi.css"
+output_path = "~/.config/wofi/style.css"
+
+[templates.pywal]
+input_path = "~/.config/matugen/templates/pywal.json"
+output_path = "~/.cache/wal/colors.json"

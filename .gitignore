@@ -1,0 +1,34 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+__pycache__/
+node_modules/
+
+# Sensitive files (jika ada nanti)
+*.key
+*.pem
+*.p12
+.env
+.env.*

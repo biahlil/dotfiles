@@ -1,0 +1,14 @@
+[config]
+width=500
+height=500
+columns=1
+line_wrap=word
+allow_markup=true
+term=kitty
+insensitive=true
+hide_scroll=true
+print_command=true
+allow_images=true
+no_actions=true
+show=drun
+prompt=Search | 검색 | Поиск | Sök
