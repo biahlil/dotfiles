@@ -3,8 +3,8 @@
 scheme_variant = "tonal_spot"
 
 [templates.kitty]
-input_path = "~/.config/matugen/templates/kitty.conf"
-output_path = "~/.config/kitty/matugen-colors.conf"
+input_path = "~/.config/matugen/templates/kitty-full.conf"
+output_path = "~/.config/kitty/kitty.conf"
 
 [templates.wofi]
 input_path = "~/.config/matugen/templates/wofi.css"

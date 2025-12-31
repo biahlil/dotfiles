@@ -1,0 +1,8 @@
+[Default]
+save_dir=/home/kimsora/Pictures/Screenshots/
+line_size=5
+line_font=Maple Mono NF
+text_size=20
+text_font=Maple Mono NF
+painter=marker
+show_panel=true
