@@ -304,13 +304,14 @@ layout {
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "/home/kimsora/.local/bin/wal-listener.sh"
 spawn-at-startup "steam" "-silent"
+spawn-at-startup "kdeconnectd"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -427,7 +428,15 @@ binds {
     // Wofi sebagai application launcher (drun mode)
     // -I agar case-insensitive (opsional)
     Mod+D { spawn "wofi" "--show" "drun" "-I"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    
+    // DMS Notepad
+    Mod+N hotkey-overlay-title="Notepad" {
+      spawn "dms" "ipc" "call" "notepad" "toggle";  
+    }
+
+    // Custom Config Menu (Wofi dmenu mode)
+    Mod+Ctrl+D hotkey-overlay-title="Config Menu" { spawn "/home/kimsora/.local/bin/config-menu.sh"; }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -695,3 +704,6 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+include "dms/windowrules.kdl"
+include "dms/binds.kdl"

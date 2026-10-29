@@ -1,3 +1,7 @@
+# Swappy Configuration
+# Copy this to /root/.config/swappy/config for root user
+# Or to ~/.config/swappy/config for regular user
+
 [Default]
 save_dir=/home/kimsora/Pictures/Screenshots/
 line_size=5
@@ -5,4 +9,4 @@ line_font=Maple Mono NF
 text_size=20
 text_font=Maple Mono NF
 painter=marker
-show_panel=true
+show_panel=false

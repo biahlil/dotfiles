@@ -32,13 +32,7 @@ do
             # Use 'kitty @' to send command to all active kitty windows
             # Ensure 'allow_remote_control yes' is in kitty.conf
             echo "[*] Reloading Kitty..."
-            kitty @ reload-config 2>/dev/null
-
-            # Update Pywalfox
-            if command -v pywalfox &> /dev/null; then
-                echo "[*] Updating Pywalfox..."
-                pywalfox update
-            fi
+            kitty @ set-colors -a -c ~/.config/kitty/matugen-colors.conf 2>/dev/null
         else
             echo "[!] Matugen failed."
         fi

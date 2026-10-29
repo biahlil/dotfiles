@@ -32,3 +32,16 @@ node_modules/
 *.p12
 .env
 .env.*
+
+# DMS generated files
+.git/
+*.bak
+*.backup
+.changelog-*
+.firstlaunch
+
+# Niri backup files
+config.kdl.backup*
+
+# Plugin repos (auto-downloaded)
+.repos/

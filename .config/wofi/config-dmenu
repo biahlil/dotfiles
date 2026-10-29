@@ -1,0 +1,13 @@
+[config]
+width=500
+height=500
+columns=1
+line_wrap=word
+allow_markup=true
+term=kitty
+insensitive=true
+hide_scroll=true
+allow_images=false
+no_actions=true
+mode=dmenu
+prompt=Menu
